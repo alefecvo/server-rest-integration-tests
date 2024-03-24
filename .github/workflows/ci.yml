@@ -13,6 +13,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    # * é um caractere curinga que corresponde a qualquer coisa
+    # '30 11 * * *' executa o trabalho todos os dias às 11:30 UTC
+    - cron: '30 11 * * *'
 
 jobs:
   build:
