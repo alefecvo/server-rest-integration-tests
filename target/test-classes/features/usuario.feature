@@ -6,6 +6,11 @@ Feature: Usuário API
     Then O status do código de resposta deve ser 201
 
   Scenario: Deve consultar usuário cadastrado
-    Given Eu tenho um usuario cadastrado
+    Given Eu não tenho um usuario cadastrado mas desejo cadastrar
     When Eu faço um pedido GET para a URL "https://serverest.dev/usuarios"
     Then O status do código de resposta deve ser de 200
+
+  Scenario: Deve consultar usuário não cadastrado
+    Given Eu não tenho um usuario cadastrado "XPTO"
+    When Eu faço um pedido GET para a URL "https://serverest.dev/usuarios"
+    Then O status do código de resposta deverá ser de 400
