@@ -9,14 +9,14 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+#  push:
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
   schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
-    # '30 11 * * *' executa o trabalho todos os dias às 11:40 UTC-3 (14:40)
-    - cron: '40 14 * * *'
+    # '30 11 * * *' executa o trabalho todos os dias às 11:15 UTC-3 (14:50)
+    - cron: '50 14 * * *'
 
 jobs:
   build:
