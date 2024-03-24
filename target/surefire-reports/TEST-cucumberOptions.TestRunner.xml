@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumberOptions.TestRunner" time="5.708" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumberOptions.TestRunner" time="6.09" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/alefe/projetos/server-rest-integration-tests/target/surefire/surefirebooter-20240324102611446_3.jar /Users/alefe/projetos/server-rest-integration-tests/target/surefire 2024-03-24T10-26-11_236-jvmRun1 surefire-20240324102611446_1tmp surefire_0-20240324102611446_2tmp"/>
+    <property name="sun.java.command" value="/Users/alefe/projetos/server-rest-integration-tests/target/surefire/surefirebooter-20240324104030580_3.jar /Users/alefe/projetos/server-rest-integration-tests/target/surefire 2024-03-24T10-40-30_420-jvmRun1 surefire-20240324104030580_1tmp surefire_0-20240324104030580_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/alefe/projetos/server-rest-integration-tests/target/test-classes:/Users/alefe/projetos/server-rest-integration-tests/target/classes:/Users/alefe/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/alefe/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/alefe/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/alefe/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/alefe/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/alefe/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alefe/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/alefe/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/alefe/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/alefe/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/alefe/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/alefe/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/alefe/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/alefe/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/alefe/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/alefe/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/alefe/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-java/6.10.4/cucumber-java-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-core/6.10.4/cucumber-core-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-gherkin/6.10.4/cucumber-gherkin-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.10.4/cucumber-gherkin-messages-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/messages/15.0.0/messages-15.0.0.jar:/Users/alefe/.m2/repository/io/cucumber/tag-expressions/3.0.1/tag-expressions-3.0.1.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/alefe/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-plugin/6.10.4/cucumber-plugin-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/docstring/6.10.4/docstring-6.10.4.jar:/Users/alefe/.m2/repository/io/cucumber/html-formatter/13.0.0/html-formatter-13.0.0.jar:/Users/alefe/.m2/repository/io/cucumber/create-meta/4.0.0/create-meta-4.0.0.jar:/Users/alefe/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/Users/alefe/.m2/repository/io/cucumber/cucumber-junit/6.10.4/cucumber-junit-6.10.4.jar:/Users/alefe/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/alefe/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/alefe/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/alefe/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/alefe/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/alefe/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/alefe/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/alefe/projetos/server-rest-integration-tests/target/surefire/surefirebooter-20240324102611446_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/alefe/projetos/server-rest-integration-tests/target/surefire/surefirebooter-20240324104030580_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.20+9-LTS-256"/>
@@ -45,6 +45,7 @@
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.9"/>
     <property name="localRepository" value="/Users/alefe/.m2/repository"/>
+    <property name="cucumber.options" value="--tag @todos"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/76/h4vy75cj1wzcb9d36rzwdy2r0000gn/T/"/>
     <property name="java.version" value="11.0.20"/>
@@ -62,7 +63,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Deve cadastrar novo usuário" classname="Usuário API" time="3.757">
+  <testcase name="Deve cadastrar novo usuário" classname="Usuário API" time="4.171">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://serverest.dev/usuarios
 Proxy:			<none>
@@ -76,8 +77,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Miss Amalia Tromp",
-    "email": "mauro.mraz@yahoo.com",
+    "nome": "Dr. Dorian Schimmel",
+    "email": "corliss.jast@gmail.com",
     "password": "123456",
     "administrador": "true"
 }
@@ -90,18 +91,18 @@ x-download-options: noopen
 x-content-type-options: nosniff
 x-xss-protection: 1; mode=block
 content-type: application/json; charset=utf-8
-X-Cloud-Trace-Context: 499525402d9d99999215a999df86e414;o=1
-Date: Sun, 24 Mar 2024 13:26:15 GMT
+X-Cloud-Trace-Context: 03d1603f2d62a047c232f4b1decb658e;o=1
+Date: Sun, 24 Mar 2024 13:40:35 GMT
 Server: Google Frontend
 Content-Length: 82
 
 {
     "message": "Cadastro realizado com sucesso",
-    "_id": "aTGbaENVZdL2vlbW"
+    "_id": "Pp29Qg8HHvkGte3A"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="Deve consultar usuário cadastrado" classname="Usuário API" time="0.903">
+  <testcase name="Deve consultar usuário cadastrado" classname="Usuário API" time="0.911">
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://serverest.dev/usuarios
 Proxy:			<none>
@@ -115,8 +116,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Miss Irmgard Ledner",
-    "email": "corinne.kessler@yahoo.com",
+    "nome": "Jane Collins",
+    "email": "leslee.reichert@yahoo.com",
     "password": "123456",
     "administrador": "true"
 }
@@ -129,17 +130,17 @@ x-download-options: noopen
 x-content-type-options: nosniff
 x-xss-protection: 1; mode=block
 content-type: application/json; charset=utf-8
-X-Cloud-Trace-Context: ab0ae4b0d9d1ad8f8baa45423fe42563
-Date: Sun, 24 Mar 2024 13:26:17 GMT
+X-Cloud-Trace-Context: 30ada19fd2eeab2f7a806fbb2ccbe3a5
+Date: Sun, 24 Mar 2024 13:40:36 GMT
 Server: Google Frontend
 Content-Length: 82
 
 {
     "message": "Cadastro realizado com sucesso",
-    "_id": "XsJccrwnArPMCd7q"
+    "_id": "apA0SaMNRBPcXNv5"
 }
 Request method:	GET
-Request URI:	https://serverest.dev/usuarios/XsJccrwnArPMCd7q
+Request URI:	https://serverest.dev/usuarios/apA0SaMNRBPcXNv5
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -159,21 +160,21 @@ x-download-options: noopen
 x-content-type-options: nosniff
 x-xss-protection: 1; mode=block
 content-type: application/json; charset=utf-8
-X-Cloud-Trace-Context: 93fc115d084f12b155559c77d5ea7ade
-Date: Sun, 24 Mar 2024 13:26:17 GMT
+X-Cloud-Trace-Context: 27a9d5b50d8441b65a81c5347671746e
+Date: Sun, 24 Mar 2024 13:40:37 GMT
 Server: Google Frontend
-Content-Length: 165
+Content-Length: 158
 
 {
-    "nome": "Miss Irmgard Ledner",
-    "email": "corinne.kessler@yahoo.com",
+    "nome": "Jane Collins",
+    "email": "leslee.reichert@yahoo.com",
     "password": "123456",
     "administrador": "true",
-    "_id": "XsJccrwnArPMCd7q"
+    "_id": "apA0SaMNRBPcXNv5"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="Deve consultar usuário não cadastrado" classname="Usuário API" time="0.401">
+  <testcase name="Deve consultar usuário não cadastrado" classname="Usuário API" time="0.417">
     <system-out><![CDATA[Request method:	GET
 Request URI:	https://serverest.dev/usuarios/XPTO
 Proxy:			<none>
@@ -195,8 +196,8 @@ x-download-options: noopen
 x-content-type-options: nosniff
 x-xss-protection: 1; mode=block
 content-type: application/json; charset=utf-8
-X-Cloud-Trace-Context: b637c5b35f427a9573b15ad625adc1c4
-Date: Sun, 24 Mar 2024 13:26:17 GMT
+X-Cloud-Trace-Context: 155c557f8947dc312bf5f7d605e68d43
+Date: Sun, 24 Mar 2024 13:40:37 GMT
 Server: Google Frontend
 Content-Length: 45
 
