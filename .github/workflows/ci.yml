@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Java CI with Maven to execution ServerRest tests
 
 on:
 #  push:
@@ -15,8 +15,8 @@ on:
 #    branches: [ "main" ]
   schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
-    # '30 11 * * *' executa o trabalho todos os dias às 11:15 UTC-3 (14:50)
-    - cron: '50 14 * * *'
+    # '00 16 * * *' executa o trabalho todos os dias às 13:00 UTC-3 (00 16)
+    - cron: '00 16 * * *'
 
 jobs:
   build:
