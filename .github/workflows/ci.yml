@@ -53,7 +53,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Tests
-        run: mvn test -Dcucumber.options="--tag @todos" -f pom.xml
+        run: mvn test -Dcucumber.options="--tag @all" -f pom.xml
 
       - name: Generate Allure report
         uses: simple-elf/allure-report-action@v1

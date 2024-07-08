@@ -17,3 +17,16 @@ This project created to ServerRest API automation tests using Java, Maven, Cucum
 ```
 mvn test
 ```
+
+```
+Generate an example for a Rest API POST test using Java 11, Maven, Rest Assured, and Cucumber
+example:
+
+Feature: Test POST API endpoint
+
+Scenario: Post new data to the API
+Given I set POST API endpoint
+When I send POST HTTP request
+Then I receive valid HTTP response code 201
+
+```

@@ -1,4 +1,0 @@
-stepDefinitions/UsuarioSteps.class
-cucumberOptions/TestRunner.class
-dto/UsuarioDto.class
-services/UsuarioService.class
