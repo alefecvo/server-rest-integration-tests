@@ -12,11 +12,14 @@
                   <entry key="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2024.1/httpFileSystem/catalog.json" value="84" />
                   <entry key="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2024.1/httpFileSystem/github-workflow.json" value="6819" />
                   <entry key="$PROJECT_DIR$/.github/workflows/ci-hom.yml" value="0" />
-                  <entry key="$PROJECT_DIR$/.github/workflows/ci-wiremock.yml" value="7061" />
+                  <entry key="$PROJECT_DIR$/.github/workflows/ci-wiremock.yml" value="7100" />
                   <entry key="$PROJECT_DIR$/docker-compose.yml" value="293" />
                   <entry key="$PROJECT_DIR$/mock/mappings/usuarios.json" value="363" />
-                  <entry key="$PROJECT_DIR$/src/test/java/services/UserService.java" value="5300" />
-                  <entry key="$PROJECT_DIR$/src/test/java/stepDefinitions/UserSteps.java" value="6070" />
+                  <entry key="$PROJECT_DIR$/src/test/java/cucumberOptions/TestRunner.java" value="0" />
+                  <entry key="$PROJECT_DIR$/src/test/java/services/UserMockService.java" value="11839" />
+                  <entry key="$PROJECT_DIR$/src/test/java/services/UserService.java" value="8666" />
+                  <entry key="$PROJECT_DIR$/src/test/java/stepDefinitions/UserMockSteps.java" value="11737" />
+                  <entry key="$PROJECT_DIR$/src/test/java/stepDefinitions/UserSteps.java" value="11384" />
                   <entry key="$PROJECT_DIR$/wiremock/__files/login.json" value="85" />
                   <entry key="$PROJECT_DIR$/wiremock/mappings/login.json" value="0" />
                   <entry key="$PROJECT_DIR$/wiremock/mappings/usuarios.json" value="232" />
