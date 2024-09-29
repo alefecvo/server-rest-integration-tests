@@ -1,12 +1,4 @@
-# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Java CI with Maven to execution ServerRest tests
+name: ServerRest + API Rest
 
 on:
 #  push:
@@ -19,24 +11,6 @@ on:
     - cron: '00 16 * * *'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - name: Build with Maven
-      run: mvn clean install -f pom.xml
-
   test:
     runs-on: ubuntu-latest
     permissions:
@@ -53,7 +27,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Run Tests
-        run: mvn test -Dcucumber.options="--tag @all" -f pom.xml
+        run: mvn test -Dcucumber.filter.tags="@all" -f pom.xml
 
       - name: Generate Allure report
         uses: simple-elf/allure-report-action@v1

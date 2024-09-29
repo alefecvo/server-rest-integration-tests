@@ -1,10 +1,10 @@
-name: Java CI with Maven to execution ServerRest tests using Docker + Wiremock
+name: ServerRest + API Rest + Docker + Wiremock
 
 on:
-  push:
-    branches: [ "wiremock" ]
-  pull_request:
-    branches: [ "wiremock" ]
+#  push:
+#    branches: [ "wiremock" ]
+#  pull_request:
+#    branches: [ "wiremock" ]
   schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
     # '00 16 * * *' executa o trabalho todos os dias às 13:00 UTC-3 (00 16)
@@ -39,7 +39,7 @@ jobs:
 
       # Executar os testes
       - name: Run Tests
-        run: mvn test -Dcucumber.options="--tag @wiremock" -f pom.xml
+        run: mvn test -Dcucumber.filter.tags="@wiremock" -f pom.xml
 
       # Gerar o relatório Allure
       - name: Generate Allure report
