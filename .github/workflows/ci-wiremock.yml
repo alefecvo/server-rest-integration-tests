@@ -26,6 +26,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
+
+      # Subir o Docker Compose com WireMock
+      - name: Start WireMock with Docker Compose
+        run: docker-compose -f docker-compose.yml up -d
+
       - name: Build with Maven
         run: mvn clean install -f pom.xml
 
@@ -44,10 +49,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-
-      # Subir o Docker Compose com WireMock
-      - name: Start WireMock with Docker Compose
-        run: docker-compose -f docker-compose.yml up -d
 
       # Executar os testes
       - name: Run Tests
