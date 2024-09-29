@@ -27,6 +27,12 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      # Instalar Docker Compose
+      - name: Install Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
       # Subir o Docker Compose com WireMock
       - name: Start WireMock with Docker Compose
         run: docker-compose -f docker-compose.yml up -d
