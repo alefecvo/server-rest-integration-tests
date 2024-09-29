@@ -1,14 +1,14 @@
 name: ServerRest + API Rest + Docker + Wiremock
 
 on:
-#  push:
-#    branches: [ "wiremock" ]
-#  pull_request:
-#    branches: [ "wiremock" ]
-  schedule:
+  push:
+    branches: [ "wiremock" ]
+  pull_request:
+    branches: [ "wiremock" ]
+#  schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
     # '00 16 * * *' executa o trabalho todos os dias às 13:00 UTC-3 (00 16)
-    - cron: '00 16 * * *'
+#    - cron: '00 16 * * *'
 
 jobs:
   test:
