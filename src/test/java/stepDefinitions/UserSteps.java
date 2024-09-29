@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
+import org.junit.Assert;
 import services.UserService;
 
 public class UserSteps {
@@ -57,5 +58,21 @@ public class UserSteps {
     @Then("The response status code should be {int} to non-registered user")
     public void the_response_status_code_should_be_to_non_registered_user(int statusCode) {
         userService.validateNonRegisteredUserData(response, statusCode);
+    }
+
+    @Given("I have the data to register a new user wiremock")
+    public void i_have_the_data_to_register_a_new_user_wiremock() {
+        body = userService.generateUserDataWiremock();
+    }
+
+    @When("I make a POST request to the URL {string} wiremock")
+    public void i_make_a_post_request_to_the_url_wiremock(String url) {
+        response = userService.createNewUser(url, body);
+    }
+
+    @Then("The response status code should be {int} to a new user wiremock")
+    public void the_response_status_code_should_be_to_a_new_user_wiremock(int statusCode) {
+        idUser = userService.validateRegisteredUserData(response, statusCode);
+        Assert.assertEquals("jogfODIlXsqxNFS2", response.path("_id"));
     }
 }

@@ -109,4 +109,15 @@ public class UserService {
     public void validateNonRegisteredUserData(Response response, int statusCode){
         assertEquals(statusCode, response.getStatusCode());
     }
+
+    public String generateUserDataWiremock(){
+        requestBody = "{\n" +
+                "  \"nome\": \"Wiremock\",\n" +
+                "  \"email\": \"wiremock@qa.com.br\",\n" +
+                "  \"password\": \"123456\",\n" +
+                "  \"administrador\": \"true\"\n" +
+                "}";
+
+        return requestBody;
+    }
 }

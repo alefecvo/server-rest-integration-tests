@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectStateService">
+    <option name="data">
+      <map>
+        <entry key="alefecardozo@gmail.com">
+          <value>
+            <ProjectStateData>
+              <option name="conversationId" value="01J8YXSMWGA8CPCW03QV5P25RA" />
+              <option name="indexedFiles">
+                <map>
+                  <entry key="$USER_HOME$/Library/Caches/JetBrains/IdeaIC2024.1/httpFileSystem/catalog.json" value="84" />
+                  <entry key="$PROJECT_DIR$/docker-compose.yml" value="293" />
+                  <entry key="$PROJECT_DIR$/mock/mappings/usuarios.json" value="363" />
+                  <entry key="$PROJECT_DIR$/src/test/java/services/UserService.java" value="5300" />
+                  <entry key="$PROJECT_DIR$/src/test/java/stepDefinitions/UserSteps.java" value="5980" />
+                  <entry key="$PROJECT_DIR$/wiremock/__files/login.json" value="85" />
+                  <entry key="$PROJECT_DIR$/wiremock/mappings/login.json" value="0" />
+                  <entry key="$PROJECT_DIR$/wiremock/mappings/usuarios.json" value="232" />
+                </map>
+              </option>
+              <option name="projectId" value="01J8YXNNFHEX8FNZD1DGYBAZ9Y" />
+            </ProjectStateData>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
