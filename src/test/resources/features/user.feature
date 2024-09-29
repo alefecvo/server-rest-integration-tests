@@ -1,4 +1,4 @@
-Feature: User API
+Feature: User API ServerRest
 
   @all @user-register
   Scenario: Should register a new user

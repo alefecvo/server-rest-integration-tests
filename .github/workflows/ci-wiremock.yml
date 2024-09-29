@@ -1,10 +1,10 @@
-name: ServerRest + API Rest
+name: ServerRest + API Rest + Docker + Wiremock
 
 on:
 #  push:
-#    branches: [ "main" ]
+#    branches: [ "wiremock" ]
 #  pull_request:
-#    branches: [ "main" ]
+#    branches: [ "wiremock" ]
   schedule:
     # * é um caractere curinga que corresponde a qualquer coisa
     # '00 16 * * *' executa o trabalho todos os dias às 13:00 UTC-3 (00 16)
@@ -26,9 +26,22 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
-      - name: Run Tests
-        run: mvn test -Dcucumber.filter.tags="@all" -f pom.xml
 
+      # Instalar Docker Compose
+      - name: Install Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
+      # Subir o Docker Compose com WireMock
+      - name: Start WireMock with Docker Compose
+        run: docker-compose -f docker-compose.yml up -d
+
+      # Executar os testes
+      - name: Run Tests
+        run: mvn test -Dcucumber.filter.tags="@wiremock" -f pom.xml
+
+      # Gerar o relatório Allure
       - name: Generate Allure report
         uses: simple-elf/allure-report-action@v1
         with:
