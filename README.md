@@ -1,7 +1,7 @@
 # server-rest-integration-tests
 This project created to ServerRest API automation tests using Java, Maven, Cucumber, Restassured, StackSpot AI.
 
-Lets go.
+Lets go..
 
 ## Dependencies
 
